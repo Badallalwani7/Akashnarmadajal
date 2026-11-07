@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Akash — App Design Preview</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap">
+<style>
+  :root {
+    --bg: #F4F5F9;
+    --card: #FFFFFF;
+    --ink: #16183A;
+    --muted: #585C78;
+    --line: #E4E6EE;
+    --saffron: #F06A28;
+    --saffron-ink: #AD4C1D;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: 'Plus Jakarta Sans', system-ui, sans-serif; }
+  a { color: var(--saffron-ink); }
+  .wrap { max-width: 1840px; margin: 0 auto; padding: 48px 32px 80px; }
+  .brand { display: flex; align-items: center; gap: 8px; font-family: 'Fraunces', serif; font-style: italic; font-size: 26px; }
+  .brand svg { color: var(--saffron); }
+  .eyebrow { font-size: 12px; font-weight: 800; letter-spacing: 1.6px; text-transform: uppercase; color: var(--saffron-ink); margin-top: 36px; }
+  h1 { font-family: 'Fraunces', serif; font-weight: 500; font-size: clamp(38px, 5.6vw, 68px); line-height: 1.02; letter-spacing: -1px; margin: 10px 0 0; max-width: 900px; }
+  h1 em { color: var(--saffron-ink); }
+  .lead { color: var(--muted); font-size: 17px; line-height: 1.6; max-width: 760px; margin: 18px 0 0; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+  .chips span { font-size: 13px; font-weight: 700; padding: 8px 14px; border-radius: 999px; background: var(--card); border: 1px solid var(--line); }
+  .why { margin-top: 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; max-width: 1200px; }
+  .why div { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 16px 18px; font-size: 14px; line-height: 1.55; color: #3D4060; }
+  .why b { display: block; color: var(--ink); font-size: 15px; margin-bottom: 4px; }
+  section { margin-top: 64px; }
+  .head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 12px 32px; }
+  h2 { font-family: 'Fraunces', serif; font-weight: 500; font-size: 34px; letter-spacing: -0.5px; margin: 0; }
+  h2 small { display: block; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 12px; font-weight: 800; letter-spacing: 1.6px; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+  .head p { margin: 8px 0 0; color: var(--muted); max-width: 640px; line-height: 1.55; }
+  .row { display: flex; gap: 28px; overflow-x: auto; padding: 26px 4px 14px; scroll-snap-type: x mandatory; }
+  figure { margin: 0; flex-shrink: 0; scroll-snap-align: start; }
+  .phone { width: 410px; height: 864px; padding: 10px; border-radius: 56px; background: #0F1024; box-shadow: 0 30px 70px rgba(22,24,58,0.22); }
+  .phone iframe { width: 390px; height: 844px; border: 0; border-radius: 46px; display: block; background: #fff; }
+  figcaption { display: flex; justify-content: space-between; align-items: baseline; margin-top: 14px; padding: 0 8px; font-size: 14px; font-weight: 800; }
+  figcaption a { font-size: 13px; font-weight: 700; text-decoration: none; }
+  .divider { margin-top: 88px; padding-top: 40px; border-top: 1px solid var(--line); }
+  footer { margin-top: 72px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; line-height: 1.7; }
+  @media (max-width: 560px) {
+    .wrap { padding: 32px 16px 64px; }
+    .phone { zoom: 0.8; }
+    h2 { font-size: 28px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="brand"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><path d="M12 1.5l2.2 8.3 8.3 2.2-8.3 2.2-2.2 8.3-2.2-8.3L1.5 12l8.3-2.2z" fill="currentColor"></path></svg>akash</div>
+<div class="eyebrow">App design preview · iOS &amp; Android</div>
+<h1>Talk to a verified astrologer, <em>in minutes.</em></h1>
+<p class="lead">An astrologer consultation app: chat, call and live sessions with verified astrologers, a prepaid wallet, a remedies store, Kundli Milan and daily horoscopes. Every phone below is clickable — tap buttons inside it to move through the flow.</p>
+<div class="chips"><span>12 screens</span><span>One design for iOS + Android</span><span>Hindi + English ready</span><span>Clickable prototype</span></div>
+<div class="why">
+  <div><b>Find the right astrologer fast</b>Pick a concern — love, career, marriage — and see matched experts with price, languages, experience and real wait time.</div>
+  <div><b>Transparent pricing</b>Per-minute rates, free minutes and how long your balance lasts are shown before and during every session.</div>
+  <div><b>No dropped sessions</b>Top up the wallet inside a chat or call, and join a waitlist instead of hitting "busy".</div>
+  <div><b>Details saved once</b>Birth details live in profiles (Me, Partner) and are pre-filled before each consultation.</div>
+</div>
+
+<section>
+  <div class="head"><div><h2><small>Flow 01</small>Discover</h2><p>Log in with OTP, a home screen built around chat and call, a smart astrologer list and a trust-first profile.</p></div></div>
+  <div class="row">
+    <figure><div class="phone"><iframe src="consult/main.html" title="Log in" loading="lazy"></iframe></div><figcaption>Log in <a href="consult/main.html">Open full screen</a></figcaption></figure>
+    <figure><div class="phone"><iframe src="consult/home.html" title="Home" loading="lazy"></iframe></div><figcaption>Home <a href="consult/home.html">Open full screen</a></figcaption></figure>
+    <figure><div class="phone"><iframe src="consult/astrologers.html" title="Chat with astrologer" loading="lazy"></iframe></div><figcaption>Chat with astrologer <a href="consult/astrologers.html">Open full screen</a></figcaption></figure>
+    <figure><div class="phone"><iframe src="consult/profile.html" title="Astrologer profile" loading="lazy"></iframe></div><figcaption>Astrologer profile <a href="consult/profile.html">Open full screen</a></figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <div class="head"><div><h2><small>Flow 02</small>Consult</h2><p>Recharge with bonus credit, confirm birth details, then chat or call with a live session meter.</p></div></div>
+  <div class="row">
+    <figure><div class="phone"><iframe src="consult/wallet.html" title="Add money" loading="lazy"></iframe></div><figcaption>Add money <a href="consult/wallet.html">Open full screen</a></figcaption></figure>
+    <figure><div class="phone"><iframe src="consult/intake.html" title="Start chat" loading="lazy"></iframe></div><figcaption>Start chat <a href="consult/intake.html">Open full screen</a></figcaption></figure>
+    <figure><div class="phone"><iframe src="consult/chat.html" title="Chat session" loading="lazy"></iframe></div><figcaption>Chat session <a href="consult/chat.html">Open full screen</a></figcaption></figure>
+    <figure><div class="phone"><iframe src="consult/call.html" title="Call session" loading="lazy"></iframe></div><figcaption>Call session <a href="consult/call.html">Open full screen</a></figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <div class="head"><div><h2><small>Flow 03</small>Engage</h2><p>Live sessions with a call queue, a remedies store picked for your chart, Kundli Milan and daily horoscopes.</p></div></div>
+  <div class="row">
+    <figure><div class="phone"><iframe src="consult/live.html" title="Live session" loading="lazy"></iframe></div><figcaption>Live session <a href="consult/live.html">Open full screen</a></figcaption></figure>
+    <figure><div class="phone"><iframe src="consult/shop.html" title="Remedies store" loading="lazy"></iframe></div><figcaption>Remedies store <a href="consult/shop.html">Open full screen</a></figcaption></figure>
+    <figure><div class="phone"><iframe src="consult/matching.html" title="Kundli Milan" loading="lazy"></iframe></div><figcaption>Kundli Milan <a href="consult/matching.html">Open full screen</a></figcaption></figure>
+    <figure><div class="phone"><iframe src="consult/horoscope.html" title="Daily horoscope" loading="lazy"></iframe></div><figcaption>Daily horoscope <a href="consult/horoscope.html">Open full screen</a></figcaption></figure>
+  </div>
+</section>
+
+<div class="divider">
+  <div class="eyebrow" style="margin-top:0">Style explorations</div>
+  <h2 style="margin-top:10px">Three alternative visual directions</h2>
+  <p class="lead" style="margin-top:10px">Earlier style studies for the same product, shown for comparison.</p>
+</div>
+
+<section style="margin-top:40px">
+  <div class="head"><div><h2><small>Direction A</small>Obsidian &amp; Gold</h2><p>Dark luxury: night-sky black, champagne gold and an editorial serif.</p></div></div>
+  <div class="row">
+    <figure><div class="phone"><iframe src="templates/obsidian-welcome.html" title="Obsidian welcome" loading="lazy"></iframe></div><figcaption>Welcome <a href="templates/obsidian-welcome.html">Open full screen</a></figcaption></figure>
+    <figure><div class="phone"><iframe src="templates/obsidian-today.html" title="Obsidian today" loading="lazy"></iframe></div><figcaption>Today <a href="templates/obsidian-today.html">Open full screen</a></figcaption></figure>
+    <figure><div class="phone"><iframe src="templates/obsidian-chart.html" title="Obsidian birth chart" loading="lazy"></iframe></div><figcaption>Birth chart <a href="templates/obsidian-chart.html">Open full screen</a></figcaption></figure>
+    <figure><div class="phone"><iframe src="templates/obsidian-reading.html" title="Obsidian daily reading" loading="lazy"></iframe></div><figcaption>Daily reading <a href="templates/obsidian-reading.html">Open full screen</a></figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <div class="head"><div><h2><small>Direction B</small>Aurora Bento</h2><p>Bold and playful: night violet with lime, periwinkle, coral and pink.</p></div></div>
+  <div class="row">
+    <figure><div class="phone"><iframe src="templates/aurora-welcome.html" title="Aurora pick your sign" loading="lazy"></iframe></div><figcaption>Pick your sign <a href="templates/aurora-welcome.html">Open full screen</a></figcaption></figure>
+    <figure><div class="phone"><iframe src="templates/aurora-home.html" title="Aurora home" loading="lazy"></iframe></div><figcaption>Home bento <a href="templates/aurora-home.html">Open full screen</a></figcaption></figure>
+    <figure><div class="phone"><iframe src="templates/aurora-match.html" title="Aurora compatibility" loading="lazy"></iframe></div><figcaption>Compatibility <a href="templates/aurora-match.html">Open full screen</a></figcaption></figure>
+    <figure><div class="phone"><iframe src="templates/aurora-tarot.html" title="Aurora daily tarot" loading="lazy"></iframe></div><figcaption>Daily tarot <a href="templates/aurora-tarot.html">Open full screen</a></figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <div class="head"><div><h2><small>Direction C</small>Pearl Vedic</h2><p>Light and calm: pearl grey, indigo ink and saffron, Kundli-first.</p></div></div>
+  <div class="row">
+    <figure><div class="phone"><iframe src="templates/pearl-welcome.html" title="Pearl birth details" loading="lazy"></iframe></div><figcaption>Birth details <a href="templates/pearl-welcome.html">Open full screen</a></figcaption></figure>
+    <figure><div class="phone"><iframe src="templates/pearl-home.html" title="Pearl home and Panchang" loading="lazy"></iframe></div><figcaption>Home &amp; Panchang <a href="templates/pearl-home.html">Open full screen</a></figcaption></figure>
+    <figure><div class="phone"><iframe src="templates/pearl-kundli.html" title="Pearl Janam Kundli" loading="lazy"></iframe></div><figcaption>Janam Kundli <a href="templates/pearl-kundli.html">Open full screen</a></figcaption></figure>
+    <figure><div class="phone"><iframe src="templates/pearl-consult.html" title="Pearl consult" loading="lazy"></iframe></div><figcaption>Consult <a href="templates/pearl-consult.html">Open full screen</a></figcaption></figure>
+  </div>
+</section>
+
+<footer>All names, ratings, prices and chart data are sample content for this design preview.</footer>
+</div>
+</body>
+</html>
